@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title> 버튼을 만들어 봐요</title>
+    <link href="https://fonts.googleapis.com/css?family=Anton|Noto+Sans+HK|Sunflower:300&display=swap" rel="stylesheet">
+    <style>
+        #button {
+            width: 300px;
+            height: 100px;
+            background-color: pink;
+            border-radius: 50px;
+            border: 20px solid skyblue;
+            text-align: center;
+            line-height: 100px;
+            margin: auto auto;
+            animation-name:  changecolor;
+            animation-duration: 0.2s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        /*   position:
+            absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -150%;
+            margin-top: -50%;*/
+        }
+        @keyframes changecolor{
+            from{
+                
+            }
+            to{
+                border-color: darksalmon;
+            }
+        }
+    
+        
+        #surp {
+            width: 200px;
+            height: 200px;
+            background-color: gold;
+            border-radius: 10px;
+            text-align: center;
+            line-height: 150px;
+            margin: auto auto;
+            animation-name:  bounce;
+            animation-duration: 4s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            
+            
+        
+        }
+        
+        @keyframes bounce {
+            0% {
+                border: 20px solid red;
+            }
+            15% {
+               
+                border: 20px solid red;
+                margin-top: 5%;
+            }
+            30% { 
+                
+                border: 20px solid red;
+                margin-top: 10%;
+            } 
+            45% { 
+                
+                border: 20px solid red;
+                margin-top: 15%;
+            }
+            60% { 
+                
+                border: 20px solid red;
+                margin-top: 20%;
+            }
+            80% {
+                border-radius: 200px;
+                border: 20px solid blue;
+                margin-top: 25%;
+                
+            }
+            100%{
+                 border-radius: 200px;
+                border: 20px solid red;
+                margin-top: 150%;
+            }
+            
+            
+        }
+        
+
+        #button>a {
+            color: blueviolet;
+            font-size: 300%;
+            font-weight: bold;
+            text-decoration: none;
+            display: block;
+            font-family: 'Anton';
+            animation-name:  changecolor1;
+            animation-duration: 0.2s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+
+        }
+        @keyframes changecolor1 {
+            from {
+                
+            }
+            to{
+                color: red;
+            }
+        }
+        #surp>a {
+            color: red;
+            font-size: 400%;
+            font-weight: bold;
+            text-decoration: none;
+            display: block;
+            font-family: 'Anton';
+            
+
+        }
+
+        #button:hover {
+            background-color: skyblue;
+            border-color: pink;
+            font-style: italic;    
+        }
+        #surp:hover{
+            background-color: aqua;
+       
+        }
+       
+    </style>
+</head>
+
+<body>
+
+    <div id="button">
+        <a href="nba1.png">click</a>
+    </div>
+    <div id="surp">
+        <a>0___0</a>
+        
+    </div>
+    
+
+</body></html>
