@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Y U DJ?</title>
+        <link href="https://fonts.googleapis.com/css?family=Eater|Josefin+Sans|Sunflower:300&display=swap" rel="stylesheet">
+        <style>
+        
+            * {
+                margin: 0;
+                padding: 0;
+                
+            }
+            input {
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                
+                font-family: 'Sunflower', sans-serif;
+                background-color: darkslategrey;
+            }
+        
+/*        메인 블럭*/
+            #main_wrap {
+                width: 938px;
+                height: 740px;
+                padding: 10px;
+                
+                background-color: firebrick;
+                
+                border: 1px solid ;
+                border-radius: 5px;
+                box-shadow: 0 2px 7px darkgrey;
+                
+                margin: 0 auto;
+                margin: 40px auto;
+                position: relative;
+            }
+            /*헤더*/
+            #header {
+                padding: 20px;
+                
+            }
+            #header > h1 {
+                font-family: 'Eater', cursive;
+                margin-bottom: 5px;
+                
+            }
+            #header > h2 {
+                font-weight: normal;
+                font-family: 'Eater', cursive;
+
+            }
+            
+/*            네비게이션*/
+            #nav {
+                height: 35px;
+                
+                border-top: 1px solid darkslategrey;
+                border-bottom: 1px solid darkslategrey;
+                overflow: hidden;
+            }
+            #menu {
+                float: left;
+            }
+            #search{
+                float: right;
+                height: 35px;
+            }
+            #menu>ul{
+                list-style: none;
+                
+            }
+            #menu>ul>li {
+                height: 35px;
+                line-height: 35px;
+                float: left;
+               /* padding: 0 20px;*/
+                color: white;
+                
+            }
+            
+            /*메뉴링크*/
+            #menu>ul>li>a{
+                display: block;
+                line-height: 35px;
+                text-decoration: none;
+                padding: 0 20px;
+                color: white;
+                
+            }
+            #menu>ul>li:hover{
+                background-color: black;               
+
+                
+            }
+            #menu>ul>li>a:hover {
+                background-color: black;
+                color:red;
+            }
+            
+            
+            #search>input[type=text] {
+                height: 22px;
+                border-radius: 10px 0 0 10px;
+                border: 1px solid black;
+                vertical-align: middle;
+                margin-top: 4px;
+            }
+            #search>input[type=button]{
+                height: 24px;
+                margin-left: -1px;
+                border-radius: 0 5px 5px 0;
+                border: 1px solid black;
+                margin-top: 4px;       
+                vertical-align: middle;
+            
+            }
+            #contents {
+                overflow: hidden;
+                padding: 5px;
+            }
+            #content{
+                float: left;
+                width: 700px;
+
+                background-color: darkred;
+            }
+            #aside{
+                float: right;
+                width: 198px;
+                height: 200px;
+                background-color: black;
+                
+                padding: 15px;
+            }
+            #aside>ul{
+                list-style: none;
+                color: white;
+                margin-left: 10px;
+                margin-top: 5px;
+                margin-bottom: 30px;
+            }
+            #aside>ul>li {
+                height: 30px;
+                line-height: 30px;
+            }
+            #aside>div>.killimg{
+                width: 200px;
+               height: 250px;
+                margin-top: 40px;
+                animation-name: kill;
+                animation-direction: alternate;
+                animation-duration: 9s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes kill{
+                
+                25%{
+                    padding:0 320px;
+                }
+                50%{
+                    padding: 320px 320px;
+                }
+                75%{
+                    padding: 320px 0;
+                }
+                100%{
+                    
+                }
+            }
+            
+            #content>article>.img{
+                width: 300px;
+                margin-left: 10px;
+            }
+            #content>article>.img1{
+                width: 300px;
+                height: 200px;
+                margin-left: 10px;
+            }
+            #content>article>.date{
+                display: block;
+                padding: 0 10px;
+                font-style: italic;
+                margin-bottom: 5px;
+                color: white
+            }
+            #content>article>.title{
+                padding: 20px 10px;
+                color: gold;
+                font-weight: 900px;
+            }
+            #content>article>p{
+                padding: 10px;
+                line-height: 160%;
+                color: gold;
+            }
+            #content>article{
+                margin: 0 25px;
+                 
+            }
+            #content>article>ul{
+                list-style: none;
+                line-height: 35px;
+                
+            }
+            #content>article>ul>li{
+                display: inline-block;
+                color: white;
+                font-size: 20px;
+                font-weight: 
+
+            }
+            #whatname{
+                padding-left: 50px;
+            }
+            #whatspell{
+                padding-left: 90px;
+            }
+            
+            #footmenu>ul{
+                list-style: none;
+                
+            }
+            #footmenu>ul>li {
+                height: 30px;
+                color: white;
+                
+            }
+            
+            /*풋 메뉴링크*/
+            #footmenu>ul>li>a{
+                display: block;
+                line-height: 35px;
+                text-decoration: none;
+                padding: 0 20px;
+                color: white;
+                
+            }
+            #footmenu>ul>li:hover{
+                background-color: black;               
+                
+                
+            }
+            #footmenu>ul>li>a:hover {
+                background-color: black;
+                color:red;
+            }
+            
+            #menu {
+                float: left;
+            }
+            #search{
+                float: right;
+                height: 35px;
+            }
+            #footlist>ul{
+                list-style: none;
+                
+            }
+            #footlist>ul>li {
+                height: 35px;
+                line-height: 35px;
+                float: left;
+               /* padding: 0 20px;*/
+                color: white;
+                
+            }
+            
+            /*footlist 링크*/
+            #footlist>ul>li>a{
+                display: block;
+                line-height: 35px;
+                text-decoration: none;
+                padding: 0 40px;
+                color: silver;
+                
+            }
+            #footlist>ul>li:hover{
+                background-color: black;               
+
+                
+            }
+            #footlist>ul>li>a:hover {
+                background-color: black;
+                color:red;
+
+            }
+            #hellow{
+            width: 300px;
+            height: 100px;
+            background-color: black;
+            border-radius: 10px;
+            border: 20px solid darkred;
+            text-align: center;
+            right: 10px;
+            position: absolute;
+            color: white;
+            font-size: 320%;
+            font-weight: bold;
+            font-family: 'Eater',sans-serif;
+            animation-name:  changecolor;
+            animation-duration: 0.5s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+
+        }
+        @keyframes changecolor {
+            from {
+                
+            }
+            to{ 
+                background-color: darkslategray;
+                color: red;
+                border-radius:30px;
+            }
+        }
+            
+            
+        
+        </style>
+    </head>
+    
+    <body>
+        <div id="main_wrap">
+            <div id="hellow">hellow"</div>
+            <div id="header">
+            <h1>DEATH NOTE</h1>
+            <h2>데쓰노트에 월요일.. 적고싶다...</h2></div>
+            <div id="nav">
+                <div id="menu"><ul>
+                    
+                    <li><a href="">menu</a></li>
+                    <li><a href="">menu2</a></li>
+                    <li><a href="">menu3</a></li>
+                    <li><a href="">menu4</a></li>
+                    <li><a href="">menu5</a></li>
+                    <li><a href="">menu6</a></li>
+                    <li><a href="">menu7</a></li>
+                    </ul></div>
+                <div id="search">
+                <input type="text"><input type="button" value="검색">
+                </div>
+            </div>
+            <div id="contents">
+                <div id="content">
+                    <article>
+                        <h1 class="title">date :</h1>
+                        <span class="date">2019.06.05 14:55</span>
+                        <img class="img" src="../images/angry_harden.jpg"><img class="img1" src="../images/thin.png">
+                        <ul>
+                            <li id="whatname">"내 공 뺐은 놈 이름 뭐냐??"</li>
+                        <li id="whatspell">"스펠링이 뭐였더라.."</li>
+                        </ul>
+                        <p>
+                        _아마 이름만 들어 보아도 누구든지 쉽게 할 수가 있는 퍼즐로써 지금까지 다양한 버전 등으로 플레이 해보셨죠. 이번에는 무료테트리스게임하기오리지널로써 그다지 특별한 기능 같은 것 없이 순조롭게 플레이를 이루고 있지만 옵션 설정으로 들어가서 난이도 조종과 스페셜 별들들을 7개를 추가하여 기본으로 정해진 8개와 합쳐 총 15개를 가지고 미션을 즐기게 됩니다.<br>
+                            _아마 이름만 들어 보아도 누구든지 쉽게 할 수가 있는 퍼즐로써 지금까지 다양한 버전 등으로 플레이 해보셨죠. 이번에는 무료테트리스게임하기오리지널로써 그다지 특별한 기능 같은 것 없이 순조롭게 플레이를 이루고 있지만 옵션 설정으로 들어가서 난이도 조종과 스페셜 별들들을 7개를 추가하여 기본으로 정해진 8개와 합쳐 총 15개를 가지고 미션을 즐기게 됩니다.
+
+                        </p>
+                    </article>
+                
+                </div>
+                <div id="aside">
+                <h4 style="color: white">광고</h4><ul>
+                    <li>배달의 민족</li>
+                    <li>배달통</li>
+                    <li>요기요</li>
+                    <li>여기어때</li>
+                    <li>여기야</li>
+                    
+                    </ul>
+                <div ><img class="killimg" src="../images/kill.jpg">
+                    </div>
+                </div>
+            </div>
+            <div id="footer"><div id="footmenu"><ul>
+                    
+                    <li><a href="">고객센터 : 010-XXXX-XXXX / 02-XXX-XXXX</a></li>
+                    <li><a href="">오시는길 : 서울시 마포구 합정동 구공탄곱창 건물 3층 101호</a></li>
+                <li><a href="">제작지원 : 최민수,제임스 하든, 하데스</a></li>
+                </ul>
+                <div id="footlist"><ul>
+                    <li><a href="">회사소개</a></li>
+                    <li><a href="">인재채용</a></li>
+                    <li><a href="">제휴제안</a></li>
+                    <li><a href="">이용약관</a></li>
+                    <li><a href="">개인정보처리방침</a></li>
+                    <li><a href="">청소년보호정책</a></li>
+                    <li><a href="">기생충 스포</a></li>
+                    <li><a href="">악인전 스포</a></li>
+                    <li><a href="">엑스맨 스포</a></li>
+                    <li><a href="">(주)비트캠프</a></li>
+                    </ul></div>
+
+                </div>
+            </div>
+                    
+                
+    
+        </div>
+    </body>
+</html>
