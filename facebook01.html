@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+    <title>Facebook.co.kr</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #head {
+            height: 85px;
+            background-color: #3e5b99;
+        }
+
+        #login {
+             float: right;
+            width: 400px;
+            height: 70px;
+           
+        }
+
+
+        .log {
+            color: white;
+
+        }
+
+        
+        #login>table {
+            font-size: 14px;
+            margin: 10px 0 0 0;
+            width: 400px;
+            height: 70px;
+            
+            
+        }
+
+        #email {
+            width: 150px;
+            height: 20px;
+        }
+
+        #password {
+            width: 150px;
+            height: 20px;
+        }
+
+
+        #submit {
+            border: 1px solid cornflowerblue;
+            width: 55px;
+            font-size: 14px;
+            background-color: cornflowerblue;
+            color: white;
+            height: 25px;
+
+        }
+
+
+        #bodyBackGround {
+            background-image: linear-gradient(#feffff, #d4d9e9);
+
+            height: 580px;
+        }
+
+        #head>#headBackGround {
+            width: 960px;
+            padding: 3px 0 0 0;
+            margin: auto;
+            height: 85px;
+        }
+
+        #content {
+            width: 980px;
+            margin: auto;
+        }
+
+        #left {
+            width: 580px;
+            float: left;
+        }
+
+        #intro {
+            color: black;
+            font-size: 18px;
+            width: 450px;
+            font-weight: bold;
+            float: left;
+        }
+
+        #joinMain {
+            width: 400px;
+            float: right;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+
+        #join1 {
+            font-size: 34px;
+            font-weight: bold;
+            color: black;
+            margin: 0 0 10px;
+        }
+
+        #join2 {
+            color: black;
+            font-size: 16px;
+        }
+
+        #infoMain {
+            width: 400px;
+            float: left;
+        }
+
+        .info {
+            padding: 10px 10px;
+            display: inline;
+            border: 1px solid skyblue;
+            border-radius: 5px;
+        }
+
+        #name1 {
+            width: 170px;
+            height: 23px;
+        }
+
+        #name2 {
+            width: 170px;
+            height: 23px;
+        }
+
+        #phone {
+            width: 377.5px;
+            height: 23px;
+            margin: 10px 0;
+        }
+
+        #newpw {
+            width: 377.5px;
+            height: 23px;
+        }
+
+
+        .info2 {
+            color: darkgrey;
+            font-size: 14px;
+            margin: 20px 0 3px;
+            font-weight: bold;
+        }
+
+        .birth {
+            background-color: white;
+            height: 23px;
+            font-size: 12px;
+        }
+
+        label {
+            font-size: 14px;
+            padding: 0 15px 0 0px;
+            color: black;
+
+        }
+
+        #infoMain>p {
+            color: black;
+            margin: 10px 0px;
+            font-size: 12px;
+            width: 400px;
+        }
+
+        #infoMain>input[type=button] {
+            margin: 5px 0px;
+            border-radius: 5px;
+            border: 1px solid darkgreen;
+            width: 200px;
+            height: 38px;
+            background-color: darkcyan;
+            margin-top: 20px;
+            font-size: 20px;
+            color: white;
+
+            
+        }
+
+        #makePage {
+            margin: 10px 0 0;
+            font-size: 13px;
+            color: #666666;
+            font-weight: bolder;
+            margin-top: 10px;
+        }
+
+        .page {
+            color: royalblue;
+        }
+
+
+
+        #footer {
+            width: 960px;
+            margin: 20px auto;
+        }
+
+        ul {
+            padding: 7px 0;
+        }
+
+        ul>li {
+            display: inline;
+            color: dimgray;
+            padding: 0 0 0 10px;
+            font-size: 12px;
+            
+        }
+
+
+        span {
+            font-size: 12px;
+            color: dimgray;
+        }
+        #forgatId {
+            height: 10px;
+            text-decoration: none;
+            width: 100px;
+            color: lightskyblue;
+        }
+
+
+
+        #logo>img {
+            width: 200px;
+            padding: 10px 0 0 0;
+            float: left;
+        }
+    </style>
+</head>
+
+
+<body>
+    <!--        메인창 만들기-->
+    <div id="main">
+        <div id="head">
+            <div id="headBackGround">
+                <div id="logo">
+                    <img src="../images/facebooklogo.PNG">
+                </div>
+
+                <div id="login">
+                    <table>
+                        <tr>
+                            <!--                                로그인창 만들기-->
+                            <td class="log">이메일 또는 휴대폰</td>
+                            <td class="log">비밀번호</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="email" id="email">
+                            </td>
+                            <td>
+                                <input type="password" id="password">
+                            </td>
+                            <td>
+                                <input value="로그인" type="submit" id="submit">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <a id="forgatId" href="#">계정을 잊으셨나요?</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="bodyBackGround">
+
+            <div id="content">
+                <div id="left">
+                    <div style="margin-top: 50px" id="intro">Facebook에서 전세계에 있는 친구, 가족, 지인들과 함께 이야기를 나눠보세요.</div>
+                    <img style="margin-top: 22px" src="../images/facebook.PNG">
+                </div>
+
+                <div id="joinMain">
+                    <div id="join1">가입하기</div>
+                    <div id="join2">항상 지금처럼 무료로 즐기실 수 있습니다.</div>
+                </div>
+                <div id="infoMain">
+                    <input type="text" class="info" id="name1" placeholder="성(姓)">
+                    <input type="text" class="info" id="name2" placeholder="이름(성은 제외)">
+                    <input type="text" class="info" id="phone" placeholder="휴대폰 번호 또는 이메일">
+                    <input type="text" class="info" id="newpw" placeholder="새 비밀번호">
+
+                    <div class="info2">생일</div>
+                    <select class="birth">
+                        <option>1993</option>
+                    </select>
+                    <select class="birth">
+                        <option>4월</option>
+                    </select>
+                    <select class="birth">
+                        <option>29</option>
+                    </select>
+
+                    <div class="info2">성별</div>
+                    <input type="radio" name="sex" id="woman"><label for="w">여성</label>
+                    <input type="radio" name="sex" id="man"><label for="m">남성</label>
+                    <input type="radio" name="sex" id="sex"><label for="n">직접 지정</label>
+
+                    <p>
+                        가입하기 버튼을 클릭하면 Facebook의 <a href="#" class="page">약관</a>, <a href="#" class="page">데이터 정책</a> 및 <a href="#" class="page">쿠키 정책</a>에 동의하게 됩니다. Facebook으로부터 SMS 알림을 받을 수 있으며 알림은 언제든지 옵트 아웃할 수 있습니다.
+                    </p>
+
+                    <input type="button" value="가입하기">
+
+                    <div id="makePage">유명인, 밴드, 비즈니스를 위한 <a href="#" class="page">페이지 만들기</a></div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <div id="footer">
+            <div id="language">
+                <ul>
+                    <li>한국어</li>
+                    <li><a href="#" class="page">English (US)</a></li>
+                    <li><a href="#" class="page">Tiếng Việt</a></li>
+                    <li><a href="#" class="page">Bahasa Indonesia</a></li>
+                    <li><a href="#" class="page">ภาษาไทย</a></li>
+                    <li><a href="#" class="page">Español</a></li>
+                    <li><a href="#" class="page">中文(简体)</a></li>
+                    <li><a href="#" class="page">日本語</a></li>
+                    <li><a href="#" class="page">Português (Brasil)</a></li>
+                    <li><a href="#" class="page">Français (France)</a></li>
+                    <li><a href="#" class="page">Deutsch</a></li>
+                </ul>
+                <hr>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#" class="page">가입하기</a></li>
+                    <li><a href="#" class="page">로그인</a></li>
+                    <li><a href="#" class="page">Messenger</a></li>
+                    <li><a href="#" class="page">Facebook Lite</a></li>
+                    <li><a href="#" class="page">사람</a></li>
+                    <li><a href="#" class="page">프로필</a></li>
+                    <li><a href="#" class="page">페이지</a></li>
+                    <li><a href="#" class="page">페이지 카테고리</a></li>
+                    <li><a href="#" class="page">이벤트</a></li>
+                    <li><a href="#" class="page">장소</a></li>
+                    <li><a href="#" class="page">게임</a></li>
+                    <li><a href="#" class="page">위치</a></li>
+                    <li><a href="#" class="page">Marketplace</a></li>
+                    <li><a href="#" class="page">그룹</a></li>
+                    <li><a href="#" class="page">Instagram</a></li>
+                    <li><a href="#" class="page">지역</a></li><br>
+                    <li><a href="#" class="page">기부 캠페인</a></li>
+                    <li><a href="#" class="page">서비스</a></li>
+                    <li><a href="#" class="page">회사소개</a></li>
+                    <li><a href="#" class="page">광고 만들기</a></li>
+                    <li><a href="#" class="page">페이지 만들기</a></li>
+                    <li><a href="#" class="page">개발자</a></li>
+                    <li><a href="#" class="page">채용 정보</a></li>
+                    <li><a href="#" class="page">개인정보처리방침</a></li>
+                    <li><a href="#" class="page">쿠키</a></li>
+                    <li><a href="#" class="page">AdChoices</a></li>
+                    <li><a href="#" class="page">이용 약관</a></li>
+                    <li><a href="#" class="page">계정 보안</a></li><br>
+                    <li><a href="#" class="page">로그인 도움말</a></li>
+                    <li><a href="#" class="page">고객 센터</a></li>
+                </ul>
+            </div>
+            <div>
+                <span>Facebook © 2019</span>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+</body></html>
